@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)[PullRequestViewModel::class.java]
 
         viewModel.pullRequests.observe(this) {
-            // update UI
+            // update UI from MainActivity
         }
 
         viewModel.loadClosedPullRequests("Qkprahlad101", "repo")
